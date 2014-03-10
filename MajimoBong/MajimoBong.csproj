@@ -2,20 +2,18 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{64C21DED-20EE-4EE4-9637-88A1932CC12F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{B095A5C1-BDCE-445E-93AA-1B2F77BAD4A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Majimo</RootNamespace>
-    <AssemblyName>Majimo</AssemblyName>
+    <RootNamespace>MajimoBong</RootNamespace>
+    <AssemblyName>MajimoBong</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,8 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,22 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="RecordingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MajimoBase\MajimoBase.csproj">
       <Project>{12EB2CD8-1D91-4AAB-AB51-A243AD5A1B89}</Project>
       <Name>MajimoBase</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MajimoBong\MajimoBong.csproj">
-      <Project>{B095A5C1-BDCE-445E-93AA-1B2F77BAD4A1}</Project>
-      <Name>MajimoBong</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MajimoDatabase\MajimoDatabase.csproj">
-      <Project>{AD363A65-160A-463F-AAFA-7E9CE4A75932}</Project>
-      <Name>MajimoDatabase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,37 @@
+﻿INSERT INTO Recordings
+            ( id
+            , bong_id
+            , title
+            , subtitle
+            , description
+            , channel
+            , start
+            , duration
+            , genre
+            , series_season
+            , series_number
+            , series_count
+            , image_url
+            , download_hd_url
+            , download_hq_url
+            , download_nq_url
+            , download_date
+            )
+VALUES      ( @id
+            , @bong_id
+            , @title
+            , @subtitle
+            , @description
+            , @channel
+            , @start
+            , @duration
+            , @genre
+            , @series_season
+            , @series_number
+            , @series_count
+            , @image_url
+            , @download_hd_url
+            , @download_hq_url
+            , @download_nq_url
+            , NULL
+            )

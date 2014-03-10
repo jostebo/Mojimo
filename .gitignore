@@ -28,4 +28,8 @@ obj/
 _ReSharper*/
 
 #Lokale Einstellungen ignorieren
-*.localsettings
+majimo-settings.xml
+majimo-settings.xsd
+
+#Log Verzeichnis ignorieren
+[Ll]og*/

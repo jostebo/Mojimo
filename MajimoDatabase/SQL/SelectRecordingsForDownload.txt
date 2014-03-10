@@ -1,0 +1,19 @@
+﻿SELECT  id
+       ,bong_id
+       ,title
+       ,subtitle
+       ,description
+       ,channel
+       ,start
+       ,duration
+       ,genre
+       ,series_season
+       ,series_number
+       ,series_count
+       ,image_url
+       ,download_hd_url
+       ,download_hq_url
+       ,download_nq_url
+FROM    Recordings
+WHERE   download_date IS NULL
+ORDER BY start, channel
